@@ -1,0 +1,12 @@
+{
+    "local": {
+        "hostUrl": "http://localhost:3000/",
+        "navUrl": "http://localhost:3001/",
+        "storeUrl": "http://localhost:3002/"
+    },
+    "github": {
+        "hostUrl": "https://oseasjs.github.io/module-federation-react-state/use-context/host/",
+        "navUrl": "https://oseasjs.github.io/module-federation-react-state/use-context/nav/",
+        "storeUrl": "https://oseasjs.github.io/module-federation-react-state/use-context/store/"
+    }
+}
