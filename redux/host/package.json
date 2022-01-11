@@ -2,11 +2,12 @@
   "name": "host",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "build:start": "cd dist && PORT=3000 npx serve",
-    "start": "webpack serve --mode development",
-    "start:live": "webpack serve --mode development --live-reload --hot"
+    "build": "webpack --mode development --env github",
+    "start": "webpack-dev-server --mode development --env local",
+    "copy": "cp ./public/jsons/*.json ./dist",
+    "predeploy": "npm install && npm run build && npm run copy",
+    "deploy": "gh-pages -e redux/host -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "author": {

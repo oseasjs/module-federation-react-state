@@ -1,0 +1,12 @@
+{
+    "local": {
+        "hostUrl": "http://localhost:3010/",
+        "navUrl": "http://localhost:3011/",
+        "storeUrl": "http://localhost:3012/"
+    },
+    "github": {
+        "hostUrl": "https://oseasjs.github.io/module-federation-react-state/redux/host/",
+        "navUrl": "https://oseasjs.github.io/module-federation-react-state/redux/nav/",
+        "storeUrl": "https://oseasjs.github.io/module-federation-react-state/redux/store/"
+    }
+}

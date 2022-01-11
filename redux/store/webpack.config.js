@@ -2,9 +2,19 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
 const deps = require("./package.json").dependencies;
-module.exports = {
+
+const getUrl = (_env, _module, _port) => {
+  if (_env.github) {
+    return `https://oseasjs.github.io/module-federation-react-state/redux/${_module}/`
+  }
+  else {
+    return `http://localhost:${_port}/`
+  }
+}
+
+module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:3012/",
+    publicPath: getUrl(argv.env, 'store', 3012)
   },
 
   resolve: {
@@ -60,4 +70,4 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
-};
+});

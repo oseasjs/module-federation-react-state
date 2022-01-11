@@ -67,7 +67,6 @@ module.exports = (_, argv) => ({
         },
       },
     }),
-    new ExternalTemplateRemotesPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     }),
