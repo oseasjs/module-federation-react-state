@@ -48,24 +48,24 @@ jobs:
       env:
         CI: true
 
-    - name: Build store/host module
-      working-directory: store/host
+    - name: Build redux/host module
+      working-directory: redux/host
       run: |
         npm install
         npm run build
       env:
         CI: true
 
-    - name: Build store/nav module
-      working-directory: store/nav
+    - name: Build redux/nav module
+      working-directory: redux/nav
       run: |
         npm install
         npm run build
       env:
         CI: true
 
-    - name: Build store/store module
-      working-directory: store/store
+    - name: Build redux/store module
+      working-directory: redux/store
       run: |
         npm install
         npm run build

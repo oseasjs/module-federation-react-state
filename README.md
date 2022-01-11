@@ -23,13 +23,25 @@ _TODO_
 
 _TODO_
 
-* Using use-context:
-* Running Locally: http://localhost:3000 | http://localhost:3001 | http://localhost:3002
-* On Github Pages: https://oseasjs.github.io/module-federation-react-state/use-context/host/
+Using use-context:
 
-* Using redux:
-* Running Locally: http://localhost:3010 | http://localhost:3011 | http://localhost:3012
-* On Github Pages: https://oseasjs.github.io/module-federation-react-state/redux/host
+* Running Locally: 
+  - http://localhost:3000 
+  - http://localhost:3001
+  - http://localhost:3002
+  
+* On Github Pages: 
+  - https://oseasjs.github.io/module-federation-react-state/use-context/host/
+
+Using Redux:
+
+* Running Locally: 
+  - http://localhost:3010
+  - http://localhost:3011
+  - http://localhost:3012
+  
+* On Github Pages: 
+  - https://oseasjs.github.io/module-federation-react-state/redux/host
 
 
 ## Inspiration
